@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E17609D9D814AEFA5B1AE580548021D0 /* Flutter */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 663CB987E8D8BAAB02391524F83BEBC1 /* Build configuration list for PBXAggregateTarget "Flutter" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = Flutter;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4EE374D9751C546373600D06398E0515 /* Pods-Runner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E788EEB0F03036AB6FC06386886700 /* Pods-Runner-dummy.m */; };
+		7079B1BDFE248ECD7A50C6C10E1F6FF3 /* ContactPickerPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FA889F87FDDE2CA1F6154918FA49D28 /* ContactPickerPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DFF29A01645AA87BA9FC9907912BCFB4 /* ContactPickerPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 19D3003574B42250CBD21917A78E8C79 /* ContactPickerPlugin.m */; };
+		FF5A8350A4FC1E1B35B821404427B69F /* contact_picker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 938B75156766FC5022C8414BD0636B94 /* contact_picker-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1320AC068B0165B17E00182DA1580F3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 759459B819F690C883710B1CE3162403;
+			remoteInfo = contact_picker;
+		};
+		49E48E6232C806EA7114B1491E5E670F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E17609D9D814AEFA5B1AE580548021D0;
+			remoteInfo = Flutter;
+		};
+		BD8195F2009B57D285493160CD181996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E17609D9D814AEFA5B1AE580548021D0;
+			remoteInfo = Flutter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0817EE0EDEA2C16972D4489F04E28C3A /* Flutter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Flutter.framework; sourceTree = "<group>"; };
+		15582F2AA5B1DA9086CD4646CDE826BA /* Flutter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.xcconfig; sourceTree = "<group>"; };
+		19D3003574B42250CBD21917A78E8C79 /* ContactPickerPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ContactPickerPlugin.m; path = Classes/ContactPickerPlugin.m; sourceTree = "<group>"; };
+		320D2FD9A31E0E454D56E7324FECF8AE /* Flutter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Flutter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		38979EEEA6C8E8617B43174323D79B1A /* contact_picker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = contact_picker.xcconfig; sourceTree = "<group>"; };
+		3FA889F87FDDE2CA1F6154918FA49D28 /* ContactPickerPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ContactPickerPlugin.h; path = Classes/ContactPickerPlugin.h; sourceTree = "<group>"; };
+		41E788EEB0F03036AB6FC06386886700 /* Pods-Runner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Runner-dummy.m"; sourceTree = "<group>"; };
+		47911645EAA6F0A0FFBC812B245109E6 /* Pods-Runner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Runner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		49958ACA7011AF98A579A31CDC31C4D1 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		6A32F599250612BB336543CC4C8B8269 /* libcontact_picker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libcontact_picker.a; path = libcontact_picker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BA7E220293A8B2AA12C1243861D6F4A /* libPods-Runner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Runner.a"; path = "libPods-Runner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		768F4579B9462AAFEEC781EF1EEC021F /* contact_picker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = contact_picker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7C930A1E8A5D6E6A47BCD52E4794E62D /* contact_picker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "contact_picker-prefix.pch"; sourceTree = "<group>"; };
+		90E8EB706D230A05BB00485439D811B4 /* Pods-Runner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Runner-frameworks.sh"; sourceTree = "<group>"; };
+		919A1A724830C8E09D316DDAABF8ACEB /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
+		938B75156766FC5022C8414BD0636B94 /* contact_picker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "contact_picker-dummy.m"; sourceTree = "<group>"; };
+		9A488AA0CA4A21FC40EE55EB8233078D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CC7CADA49884F393994A5CB791757B88 /* Pods-Runner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Runner-acknowledgements.plist"; sourceTree = "<group>"; };
+		ECF3C9C5EB2E78B5547B77A0C94519B5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A907DEFA022E46B638FB0D7A7FB75AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83579476F2C0ED919E4242021AF2606F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0106F4B0F8E847A2C69123DDED180CC1 /* contact_picker */ = {
+			isa = PBXGroup;
+			children = (
+				3FA889F87FDDE2CA1F6154918FA49D28 /* ContactPickerPlugin.h */,
+				19D3003574B42250CBD21917A78E8C79 /* ContactPickerPlugin.m */,
+				230ACC2F3C70C0946E15398EF2E04A8B /* Pod */,
+				7560CC12035FC8DE11077BCCB7243122 /* Support Files */,
+			);
+			name = contact_picker;
+			path = /Users/huyvd/Documents/projects/sendo/native_contact_picker/ios;
+			sourceTree = "<absolute>";
+		};
+		08432B6EB910338AD5B3F02B68EF7050 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0817EE0EDEA2C16972D4489F04E28C3A /* Flutter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		145213A98CDB452A268AE592CB41AF73 /* Pods-Runner */ = {
+			isa = PBXGroup;
+			children = (
+				47911645EAA6F0A0FFBC812B245109E6 /* Pods-Runner-acknowledgements.markdown */,
+				CC7CADA49884F393994A5CB791757B88 /* Pods-Runner-acknowledgements.plist */,
+				41E788EEB0F03036AB6FC06386886700 /* Pods-Runner-dummy.m */,
+				90E8EB706D230A05BB00485439D811B4 /* Pods-Runner-frameworks.sh */,
+				49958ACA7011AF98A579A31CDC31C4D1 /* Pods-Runner.debug.xcconfig */,
+				919A1A724830C8E09D316DDAABF8ACEB /* Pods-Runner.release.xcconfig */,
+			);
+			name = "Pods-Runner";
+			path = "Target Support Files/Pods-Runner";
+			sourceTree = "<group>";
+		};
+		230ACC2F3C70C0946E15398EF2E04A8B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				768F4579B9462AAFEEC781EF1EEC021F /* contact_picker.podspec */,
+				9A488AA0CA4A21FC40EE55EB8233078D /* LICENSE */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2F4DBCEFE6876086EA1E46C8770CA57F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				320D2FD9A31E0E454D56E7324FECF8AE /* Flutter.podspec */,
+				ECF3C9C5EB2E78B5547B77A0C94519B5 /* LICENSE */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3198FCF0224988CBEA0A5E30ACFAFDC2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0106F4B0F8E847A2C69123DDED180CC1 /* contact_picker */,
+				6ABD4CC79EB3A520618458A7960DAE69 /* Flutter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		388A2C86FF755910F9EA6E190E67524D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				145213A98CDB452A268AE592CB41AF73 /* Pods-Runner */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4E2503DDE93A68321D97A57EB2B92F09 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				15582F2AA5B1DA9086CD4646CDE826BA /* Flutter.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../../../../../projects/sendo/native_contact_picker/example/ios/Pods/Target Support Files/Flutter";
+			sourceTree = "<group>";
+		};
+		6ABD4CC79EB3A520618458A7960DAE69 /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				08432B6EB910338AD5B3F02B68EF7050 /* Frameworks */,
+				2F4DBCEFE6876086EA1E46C8770CA57F /* Pod */,
+				4E2503DDE93A68321D97A57EB2B92F09 /* Support Files */,
+			);
+			name = Flutter;
+			path = /Users/huyvd/Documents/development/sdks/flutter/bin/cache/artifacts/engine/ios;
+			sourceTree = "<absolute>";
+		};
+		7560CC12035FC8DE11077BCCB7243122 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38979EEEA6C8E8617B43174323D79B1A /* contact_picker.xcconfig */,
+				938B75156766FC5022C8414BD0636B94 /* contact_picker-dummy.m */,
+				7C930A1E8A5D6E6A47BCD52E4794E62D /* contact_picker-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../example/ios/Pods/Target Support Files/contact_picker";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				3198FCF0224988CBEA0A5E30ACFAFDC2 /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				FA0DB2B2F0F8D2A57211C19948976283 /* Products */,
+				388A2C86FF755910F9EA6E190E67524D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA0DB2B2F0F8D2A57211C19948976283 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A32F599250612BB336543CC4C8B8269 /* libcontact_picker.a */,
+				6BA7E220293A8B2AA12C1243861D6F4A /* libPods-Runner.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6528563E7D55FC9D92B494242B56FE47 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7079B1BDFE248ECD7A50C6C10E1F6FF3 /* ContactPickerPlugin.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B89AC411A738D1A7F802E8B89F8A3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		58FC012F42A52CF62591627DBF023D2C /* Pods-Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CDC9AA4E5AE4CFC314FB4AC38F11BB3 /* Build configuration list for PBXNativeTarget "Pods-Runner" */;
+			buildPhases = (
+				F6B89AC411A738D1A7F802E8B89F8A3B /* Headers */,
+				9AE92DF9C15B275BB7DEFD23D7C64327 /* Sources */,
+				1A907DEFA022E46B638FB0D7A7FB75AD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A596248E29598F899C6DE7D965D6A571 /* PBXTargetDependency */,
+				BF0A75D13BBEA0620137AF6B5989EDCC /* PBXTargetDependency */,
+			);
+			name = "Pods-Runner";
+			productName = "Pods-Runner";
+			productReference = 6BA7E220293A8B2AA12C1243861D6F4A /* libPods-Runner.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		759459B819F690C883710B1CE3162403 /* contact_picker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187239DA1B4A691B4F035243B3D728F1 /* Build configuration list for PBXNativeTarget "contact_picker" */;
+			buildPhases = (
+				6528563E7D55FC9D92B494242B56FE47 /* Headers */,
+				71E4FC776B0C6F3C4ECC94AC6D8B0C73 /* Sources */,
+				83579476F2C0ED919E4242021AF2606F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D0A21AA5FF40F05963218832C85B0FE /* PBXTargetDependency */,
+			);
+			name = contact_picker;
+			productName = contact_picker;
+			productReference = 6A32F599250612BB336543CC4C8B8269 /* libcontact_picker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FA0DB2B2F0F8D2A57211C19948976283 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				759459B819F690C883710B1CE3162403 /* contact_picker */,
+				E17609D9D814AEFA5B1AE580548021D0 /* Flutter */,
+				58FC012F42A52CF62591627DBF023D2C /* Pods-Runner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71E4FC776B0C6F3C4ECC94AC6D8B0C73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5A8350A4FC1E1B35B821404427B69F /* contact_picker-dummy.m in Sources */,
+				DFF29A01645AA87BA9FC9907912BCFB4 /* ContactPickerPlugin.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE92DF9C15B275BB7DEFD23D7C64327 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EE374D9751C546373600D06398E0515 /* Pods-Runner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D0A21AA5FF40F05963218832C85B0FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = E17609D9D814AEFA5B1AE580548021D0 /* Flutter */;
+			targetProxy = BD8195F2009B57D285493160CD181996 /* PBXContainerItemProxy */;
+		};
+		A596248E29598F899C6DE7D965D6A571 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = E17609D9D814AEFA5B1AE580548021D0 /* Flutter */;
+			targetProxy = 49E48E6232C806EA7114B1491E5E670F /* PBXContainerItemProxy */;
+		};
+		BF0A75D13BBEA0620137AF6B5989EDCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = contact_picker;
+			target = 759459B819F690C883710B1CE3162403 /* contact_picker */;
+			targetProxy = 1320AC068B0165B17E00182DA1580F3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		54F32F828CDCD8621D35756FB4E0AE44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38979EEEA6C8E8617B43174323D79B1A /* contact_picker.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/contact_picker/contact_picker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = contact_picker;
+				PRODUCT_NAME = contact_picker;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A3300DC144B667707E2FBFE8F6007B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 919A1A724830C8E09D316DDAABF8ACEB /* Pods-Runner.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0E391CAB3BAE92B179A492C9FEDB4E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15582F2AA5B1DA9086CD4646CDE826BA /* Flutter.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9D8BE06CDA76699D5666303709B27C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49958ACA7011AF98A579A31CDC31C4D1 /* Pods-Runner.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF5019870B27A4E23345DEEAC142D0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38979EEEA6C8E8617B43174323D79B1A /* contact_picker.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/contact_picker/contact_picker-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = contact_picker;
+				PRODUCT_NAME = contact_picker;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6180D76800CC50DBE379781F609DEC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15582F2AA5B1DA9086CD4646CDE826BA /* Flutter.xcconfig */;
+			buildSettings = {
+				ARCHS = arm64;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		187239DA1B4A691B4F035243B3D728F1 /* Build configuration list for PBXNativeTarget "contact_picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54F32F828CDCD8621D35756FB4E0AE44 /* Debug */,
+				CF5019870B27A4E23345DEEAC142D0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
+				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CDC9AA4E5AE4CFC314FB4AC38F11BB3 /* Build configuration list for PBXNativeTarget "Pods-Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9D8BE06CDA76699D5666303709B27C2 /* Debug */,
+				6A3300DC144B667707E2FBFE8F6007B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		663CB987E8D8BAAB02391524F83BEBC1 /* Build configuration list for PBXAggregateTarget "Flutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0E391CAB3BAE92B179A492C9FEDB4E5 /* Debug */,
+				F6180D76800CC50DBE379781F609DEC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

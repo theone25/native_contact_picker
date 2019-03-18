@@ -1,0 +1,22 @@
+PODS:
+  - contact_picker (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - contact_picker (from `/Users/huyvd/Documents/projects/sendo/native_contact_picker/ios`)
+  - Flutter (from `/Users/huyvd/Documents/development/sdks/flutter/bin/cache/artifacts/engine/ios`)
+
+EXTERNAL SOURCES:
+  contact_picker:
+    :path: "/Users/huyvd/Documents/projects/sendo/native_contact_picker/ios"
+  Flutter:
+    :path: "/Users/huyvd/Documents/development/sdks/flutter/bin/cache/artifacts/engine/ios"
+
+SPEC CHECKSUMS:
+  contact_picker: 57db5d8b410b52a0457d88f7b15de7d3307e8f16
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+
+PODFILE CHECKSUM: 351e02e34b831289961ec3558a535cbd2c4965d2
+
+COCOAPODS: 1.6.1
