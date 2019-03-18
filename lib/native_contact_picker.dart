@@ -10,7 +10,7 @@ import 'package:flutter/services.dart';
 ///
 /// Call [selectContact] to bring up a dialog where the user can pick a contact
 /// from his/her address book.
-class ContactPicker {
+class NativeContactPicker {
   static const MethodChannel _channel = const MethodChannel('contact_picker');
 
   /// Brings up a dialog where the user can select a contact from his/her

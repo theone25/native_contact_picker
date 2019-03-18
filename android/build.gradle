@@ -1,4 +1,4 @@
-group 'net.goderbauer.flutter.contactpicker'
+group 'vn.sendo.flutter.contactpicker'
 version '1.0-SNAPSHOT'
 
 buildscript {

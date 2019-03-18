@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:contact_picker/contact_picker.dart';
+import 'package:contact_picker/native_contact_picker.dart';
 
 void main() {
   runApp(new MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final ContactPicker _contactPicker = new ContactPicker();
+  final NativeContactPicker _contactPicker = new NativeContactPicker();
   Contact _contact;
 
   @override
