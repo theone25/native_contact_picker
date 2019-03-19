@@ -1,8 +1,22 @@
-# contact_picker_example
 
-Demonstrates how to use the contact_picker plugin.
+# native_contact_picker
+A new version of [contact_picker](https://pub.dartlang.org/packages/contact_picker) with IOS 8 supporting.
 
-## Getting Started
+[![pub package](https://img.shields.io/pub/v/native_contact_picker.svg)](https://pub.dartlang.org/packages/native_contact_picker)
 
-For help getting started with Flutter, view our online
-[documentation](http://flutter.io/).
+### Installation 
+
+
+See installing tab 
+
+
+### Example  
+
+
+
+```yaml
+import 'package:native_contact_picker/native_contact_picker.dart';
+
+final NativeContactPicker _contactPicker = new NativeContactPicker();
+Contact contact = await _contactPicker.selectContact();
+```

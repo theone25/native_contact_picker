@@ -14,7 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>contact_picker.xcscheme</key>
+		<key>native_contact_picker.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

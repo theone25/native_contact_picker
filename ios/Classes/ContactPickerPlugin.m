@@ -4,7 +4,8 @@
 
 #import "ContactPickerPlugin.h"
 @import AddressBookUI;
-@interface ContactPickerPlugin ()<ABPeoplePickerNavigationControllerDelegate>
+@import ContactsUI;
+@interface ContactPickerPlugin ()<ABPeoplePickerNavigationControllerDelegate,CNContactPickerDelegate>
 @end
 
 @implementation ContactPickerPlugin {
@@ -13,7 +14,7 @@
 
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar> *)registrar {
   FlutterMethodChannel *channel =
-      [FlutterMethodChannel methodChannelWithName:@"contact_picker"
+      [FlutterMethodChannel methodChannelWithName:@"native_contact_picker"
                                   binaryMessenger:[registrar messenger]];
   ContactPickerPlugin *instance = [[ContactPickerPlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
@@ -28,24 +29,59 @@ UIViewController *viewController ;
       _result = nil;
     }
     _result = result;
-
+      
+      
     viewController = [UIApplication sharedApplication].delegate.window.rootViewController;
-      ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc] init];
-      picker.peoplePickerDelegate = self;
-      picker.displayedProperties = [NSArray arrayWithObjects:
-                                              [NSNumber numberWithInt:kABPersonPhoneProperty],
-                                              nil];
-      [viewController presentViewController:picker animated:YES completion:nil];
+      
+      if (@available(iOS 9.0, *)) {
+          CNContactPickerViewController *contactPicker = [[CNContactPickerViewController alloc] init];
+          contactPicker.delegate = self;
+          contactPicker.displayedPropertyKeys = @[ CNContactPhoneNumbersKey ];
+          
+          [viewController presentViewController:contactPicker animated:YES completion:nil];
+      } else {
+          // Fallback on earlier versions
+          ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc] init];
+          picker.peoplePickerDelegate = self;
+          picker.displayedProperties = [NSArray arrayWithObjects:
+                                        [NSNumber numberWithInt:kABPersonPhoneProperty],
+                                        nil];
+          [viewController presentViewController:picker animated:YES completion:nil];
+      }
 
   } else {
     result(FlutterMethodNotImplemented);
   }
 }
 
+// for IOS 9 +
+- (void)contactPicker:(CNContactPickerViewController *)picker
+didSelectContactProperty:(CNContactProperty *)contactProperty  API_AVAILABLE(ios(9.0)){
+    NSString *fullName = [CNContactFormatter stringFromContact:contactProperty.contact
+                                                         style:CNContactFormatterStyleFullName];
+    
+    if ([contactProperty.value isKindOfClass:[NSString class]]) {
+        //phoneNumber = contactProperty.value;
+        printf("luồng pick những thứ khác như email -> k handle");
+    } else {
+        NSString *phoneNumber;
+        phoneNumber = [contactProperty.value stringValue];
+        _result([NSDictionary
+                 dictionaryWithObjectsAndKeys:fullName, @"fullName", phoneNumber, @"phoneNumber", nil]);
+        _result = nil;
+    }
+}
+
+- (void)contactPickerDidCancel:(CNContactPickerViewController *)picker  API_AVAILABLE(ios(9.0)){
+    _result(nil);
+    _result = nil;
+}
+
+
+// for IOS 8
 - (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker didSelectPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier
 {
     if (property == kABPersonPhoneProperty) {
-        
         ABMultiValueRef phones = ABRecordCopyValue(person, property);
         CFIndex index = ABMultiValueGetIndexForIdentifier(phones, identifier);
         NSString *phoneNumber = CFBridgingRelease(ABMultiValueCopyValueAtIndex(phones, index));
@@ -59,7 +95,7 @@ UIViewController *viewController ;
                  dictionaryWithObjectsAndKeys:fullName, @"fullName", phoneNumber, @"phoneNumber", nil]);
         
        CFRelease(phones);
-    }    
+    }
     _result = nil;
 }
 

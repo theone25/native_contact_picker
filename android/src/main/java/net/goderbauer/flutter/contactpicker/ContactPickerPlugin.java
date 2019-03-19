@@ -23,7 +23,7 @@ import static android.app.Activity.RESULT_OK;
 
 public class ContactPickerPlugin implements MethodCallHandler, PluginRegistry.ActivityResultListener {
   public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), "contact_picker");
+    final MethodChannel channel = new MethodChannel(registrar.messenger(), "native_contact_picker");
     ContactPickerPlugin instance = new ContactPickerPlugin(registrar.activity());
     registrar.addActivityResultListener(instance);
     channel.setMethodCallHandler(instance);
@@ -74,13 +74,13 @@ public class ContactPickerPlugin implements MethodCallHandler, PluginRegistry.Ac
     String number = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
     String fullName = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
 
-    HashMap<String, Object> phoneNumber = new HashMap<>();
-    phoneNumber.put("number", number);
-    phoneNumber.put("label", label);
+//    HashMap<String, Object> phoneNumber = new HashMap<>();
+//    phoneNumber.put("number", number);
+//    phoneNumber.put("label", label);
 
     HashMap<String, Object> contact = new HashMap<>();
     contact.put("fullName", fullName);
-    contact.put("phoneNumber", phoneNumber);
+    contact.put("phoneNumber", number);
 
     pendingResult.success(contact);
     pendingResult = null;
