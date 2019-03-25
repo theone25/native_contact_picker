@@ -9,6 +9,8 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
+import android.content.pm.PackageManager;
+import android.provider.Settings;
 
 import java.util.HashMap;
 
@@ -49,9 +51,23 @@ public class ContactPickerPlugin implements MethodCallHandler, PluginRegistry.Ac
 
       Intent i = new Intent(Intent.ACTION_PICK, ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
       activity.startActivityForResult(i, PICK_CONTACT);
-    } else {
+    } else if (call.method.equals("openSettings")) {
+      openSettings();
+      pendingResult.success(true);
+      pendingResult = null;
+    }
+    else {
       result.notImplemented();
     }
+  }
+ // private Registrar registrar;
+
+  private void openSettings() {
+    //Activity activity = registrar.activity();
+    Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:" + activity.getPackageName()));
+    intent.addCategory(Intent.CATEGORY_DEFAULT);
+    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+    activity.startActivity(intent);
   }
 
   @Override

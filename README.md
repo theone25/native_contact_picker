@@ -13,10 +13,14 @@ See installing tab
 ### Example
 
 
-
 ```yaml
 import 'package:native_contact_picker/native_contact_picker.dart';
 
+// open contact picker from native
 final NativeContactPicker _contactPicker = new NativeContactPicker();
 Contact contact = await _contactPicker.selectContact();
+
+// open setting
+NativeContactPicker.openSettings();
+
 ```

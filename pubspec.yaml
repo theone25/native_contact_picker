@@ -1,6 +1,6 @@
 name: native_contact_picker
 description: A Flutter plugin for picking a contact from native address book. (support IOS 8+)
-version: 0.0.2
+version: 0.0.4
 author: Huy VD <huyvd@sendo.vn>
 homepage: https://gitlab.com/hungldm/native_contact_picker
 

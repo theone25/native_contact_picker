@@ -49,7 +49,11 @@ UIViewController *viewController ;
           [viewController presentViewController:picker animated:YES completion:nil];
       }
 
-  } else {
+  } else if ([@"openSettings" isEqualToString:call.method]) {
+          [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+       //   [[UIApplication sharedApplication] openURL: [NSURL URLWithString:@"prefs:root=LOCATION_SERVICES"]];
+          result(@YES);
+   } else {
     result(FlutterMethodNotImplemented);
   }
 }

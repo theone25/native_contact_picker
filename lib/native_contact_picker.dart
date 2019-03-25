@@ -19,13 +19,17 @@ class NativeContactPicker {
   /// Returns the [Contact] selected by the user, or `null` if the user canceled
   /// out of the dialog.
   Future<Contact> selectContact() async {
-    final Map<dynamic, dynamic> result =
-        await _channel.invokeMethod('selectContact');
+    final Map<dynamic, dynamic> result = await _channel.invokeMethod('selectContact');
     if (result == null) {
       return null;
     }
     return new Contact.fromMap(result);
   }
+
+  static Future<bool> openSettings() async {
+    return await _channel.invokeMethod("openSettings");
+  }
+
 }
 
 /// Represents a contact selected by the user.

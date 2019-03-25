@@ -41,6 +41,7 @@ class _MyAppState extends State<MyApp> {
                 },
               ),
               new Text(
+
                 _contact == null ? 'No contact selected.' : _contact.toString(),
               ),
             ],
