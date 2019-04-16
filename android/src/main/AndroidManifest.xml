@@ -1,3 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="vn.sendo.flutter.contactpicker">
+package="vn.sendo.flutter.contactpicker">
+
+<uses-permission android:name="android.permission.READ_CONTACTS" />
+
 </manifest>
