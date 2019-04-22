@@ -11,7 +11,7 @@ public final class GeneratedPluginRegistrant {
     if (alreadyRegisteredWith(registry)) {
       return;
     }
-    ContactPickerPlugin.registerWith(registry.registrarFor("vn.sendo.flutter.contactpicker.ContactPickerPlugin"));
+    ContactPickerPlugin.registerWith(registry.registrarFor("ContactPickerPlugin"));
   }
 
   private static boolean alreadyRegisteredWith(PluginRegistry registry) {

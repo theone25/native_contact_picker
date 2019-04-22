@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
-import android.content.pm.PackageManager;
 import android.provider.Settings;
 
 import java.util.HashMap;
