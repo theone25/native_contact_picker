@@ -1,6 +1,6 @@
 name: native_contact_picker
 description: A Flutter plugin for picking a contact from native address book. (support IOS 8+)
-version: 0.0.6
+version: 0.0.7
 author: Huy VD <huyvd@sendo.vn>
 homepage: https://gitlab.com/hungldm/native_contact_picker
 
@@ -8,6 +8,7 @@ flutter:
   plugin:
     androidPackage: vn.sendo.flutter.contactpicker
     pluginClass: ContactPickerPlugin
+    androidx: true
 
 dependencies:
   flutter:
@@ -16,3 +17,4 @@ dependencies:
 environment:
   sdk: ">=2.0.0-dev.28.0 <3.0.0"
   flutter: ">=0.1.4 <2.0.0"
+

@@ -13,31 +13,47 @@ import android.provider.Settings;
 
 import java.util.HashMap;
 
+import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import io.flutter.embedding.engine.plugins.activity.ActivityAware;
+import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.PluginRegistry;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 import static android.app.Activity.RESULT_OK;
 
-public class ContactPickerPlugin implements MethodCallHandler, PluginRegistry.ActivityResultListener {
-  public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), "native_contact_picker");
-    ContactPickerPlugin instance = new ContactPickerPlugin(registrar.activity());
-    registrar.addActivityResultListener(instance);
-    channel.setMethodCallHandler(instance);
-  }
-
-    private ContactPickerPlugin(Activity activity) {
-        this.activity = activity;
-    }
+public class ContactPickerPlugin implements FlutterPlugin, ActivityAware, MethodCallHandler, PluginRegistry.ActivityResultListener {
 
   private static int PICK_CONTACT = 2015;
+  private static final String CHANNEL_NAME = "native_contact_picker";
 
   private Activity activity;
   private Result pendingResult;
+  private MethodChannel channel;
+
+  @Override
+  public void onAttachedToActivity(ActivityPluginBinding binding) {
+    this.activity = binding.getActivity();
+    channel.setMethodCallHandler(this);
+    binding.addActivityResultListener(this);
+  }
+
+  @Override
+  public void onDetachedFromActivityForConfigChanges() {
+
+  }
+
+  @Override
+  public void onReattachedToActivityForConfigChanges(ActivityPluginBinding binding) {
+
+  }
+
+  @Override
+  public void onDetachedFromActivity() {
+
+  }
 
   @Override
   public void onMethodCall(MethodCall call, Result result) {
@@ -59,7 +75,7 @@ public class ContactPickerPlugin implements MethodCallHandler, PluginRegistry.Ac
       result.notImplemented();
     }
   }
- // private Registrar registrar;
+  // private Registrar registrar;
 
   private void openSettings() {
     //Activity activity = registrar.activity();
@@ -100,5 +116,15 @@ public class ContactPickerPlugin implements MethodCallHandler, PluginRegistry.Ac
     pendingResult.success(contact);
     pendingResult = null;
     return true;
+  }
+
+  @Override
+  public void onAttachedToEngine(FlutterPluginBinding binding) {
+    channel = new MethodChannel(binding.getBinaryMessenger(), CHANNEL_NAME);
+  }
+
+  @Override
+  public void onDetachedFromEngine(FlutterPluginBinding binding) {
+
   }
 }

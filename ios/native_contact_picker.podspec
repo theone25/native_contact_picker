@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'native_contact_picker'
-  s.version          = '0.0.1'
+  s.version          = '0.0.7'
   s.summary          = 'A new flutter plugin project.'
   s.description      = <<-DESC
 A new flutter plugin project.
