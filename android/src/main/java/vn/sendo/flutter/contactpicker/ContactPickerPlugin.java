@@ -111,7 +111,7 @@ public class ContactPickerPlugin implements FlutterPlugin, ActivityAware, Method
 //    phoneNumber.put("label", label);
 
     HashMap<String, Object> contact = new HashMap<>();
-    contact.put("fullName", fullName);
+    contact.put("fullName", avatar);
     contact.put("phoneNumber", number);
 
     pendingResult.success(contact);
