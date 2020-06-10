@@ -104,6 +104,7 @@ public class ContactPickerPlugin implements FlutterPlugin, ActivityAware, Method
     String label = (String) ContactsContract.CommonDataKinds.Email.getTypeLabel(activity.getResources(), phoneType, customLabel);
     String number = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
     String fullName = cursor.getString(cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
+    String avatar = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts.PHOTO_THUMBNAIL_URI));
 
 //    HashMap<String, Object> phoneNumber = new HashMap<>();
 //    phoneNumber.put("number", number);
